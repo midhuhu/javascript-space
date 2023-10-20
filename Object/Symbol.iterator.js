@@ -6,7 +6,7 @@
  *  console.log(a, b);
  */
 
-/**
+/** 
  * 迭代器的知识点考察，使以下代码运行正常，不报错
  * 当前报错：TypeError: {(intermediate value)(intermediate value)} is not iterable
  * 意为：TypeError: 中间值不可迭代

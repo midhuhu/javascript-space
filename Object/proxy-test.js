@@ -4,9 +4,9 @@ const target = { sum: 0 }
 const add = new Proxy(target, {
     get(target, prop, rec) {
         if (prop === Symbol.toPrimitive) {
-            let temp = target.sum
+            let total = target.sum
             target.sum = 0
-            return () => temp
+            return () => total
         }
         target.sum += Number(prop)
         return rec
